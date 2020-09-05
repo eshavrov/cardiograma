@@ -12,7 +12,7 @@ html {
 #screen {
   width: 100vw;
   height: 50vh;
-  background-image: url(public/test.jpeg);
+  background-image: url(test.jpeg);
   background-position: 0px 0px;
   background-repeat: repeat-x;
   z-index: -2;
