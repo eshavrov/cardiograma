@@ -1,0 +1,9 @@
+{
+  "name": "cardiograma",
+  "version": "1.0.0",
+  "description": "Cardiograma",
+  "main": "index.js",
+  "repository": "git@github.com:eshavrov/cardiograma.git",
+  "author": "eshavrov <shavrov.ep@gmail.com>",
+  "license": "MIT"
+}
