@@ -1,11 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Cardiograma</title>
-</head>
-<body>
-	Cardiograma
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cardiograma</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div id="screen"></div>
+    <img id="object" src="./public/man.png" />
+    <div class="panel">
+      <section>
+        <label>Mode:</label>
+        <div id="mode" class="modes">
+          <div>
+            <button data-mode="1">I</button>
+            <button data-mode="2">II</button>
+            <button data-mode="3">III</button>
+          </div>
+          <div>
+            <button data-mode="4">aVR</button>
+            <button data-mode="5">aVL</button>
+            <button data-mode="6">aVF</button>
+          </div>
+          <div>
+            <button data-mode="7">V4</button>
+            <button data-mode="8">V5</button>
+            <button data-mode="9">V6</button>
+          </div>
+        </div>
+      </section>
+      <section>
+        <label>Direction:</label>
+        <button id="direction">Normal</button>
+      </section>
+      <section>
+        <label>Speed mm / sec</label>
+        <select name="velocity">
+          <option value="12.5">12,5</option>
+          <option value="25" selected>25</option>
+          <option value="50">50</option>
+        </select>
+      </section>
+      <section>
+        <label>Actions:</label>
+        <button id="start">Start</button>
+        <button id="stop">Stop</button>
+        <button id="print">Print</button>
+      </section>
+      <section>
+        <label>ECG Description</label>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
+          eos laudantium quaerat id dolorem consequatur eligendi, maiores
+          aperiam sed ratione, repellat porro fugiat cumque, harum provident. Et
+          rem quo aut nemo animi maxime? Molestias minus ducimus quibusdam.
+          Tenetur, asperiores reprehenderit?
+        </p>
+      </section>
+    </div>
+    <script src="./index.js"></script>
+  </body>
 </html>

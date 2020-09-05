@@ -1,0 +1,99 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  overflow-x: hidden;
+  position: absolute;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+#screen {
+  width: 100vw;
+  height: 50vh;
+  background-image: url(public/test.jpeg);
+  background-position: 0px 0px;
+  background-repeat: repeat-x;
+  z-index: -2;
+}
+
+#object {
+  box-sizing: border-box;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50vh;
+  z-index: 1;
+  object-fit: cover;
+  padding: 16px;
+  background: inherit;
+}
+
+.panel {
+  box-sizing: border-box;
+  padding: 8px;
+  width: 100vw;
+  display: flex;
+  grid-column-gap: 8px;
+  /* flex-wrap: wrap; */
+}
+
+section {
+  box-sizing: border-box;
+  border: 1px solid yellow;
+  padding: 16px;
+  margin-bottom: 8px;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+label {
+  display: block;
+  color: #aaa;
+  margin: 0 0 16px;
+}
+
+.modes div {
+  display: flex;
+  grid-column-gap: 4px;
+  margin: 0 0 4px;
+}
+
+button[data-mode] {
+  margin: 0;
+  padding: 8px;
+  width: 60px;
+}
+
+button {
+  font-family: inherit;
+  font-size: inherit;
+
+  appearance: none;
+  background: none;
+  color: lime;
+  border: 1px solid lime;
+  margin: 0 0 8px;
+  padding: 8px 24px;
+}
+
+select {
+  font-family: inherit;
+  font-size: inherit;
+
+  min-width: 120px;
+  margin: 0;
+  padding: 8px 24px;
+  appearance: none;
+  background: none;
+  color: lime;
+  border: 1px solid lime;
+}
+
+p {
+  color: #eee;
+  margin: 0;
+  padding: 0;
+}
