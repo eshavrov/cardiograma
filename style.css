@@ -39,6 +39,12 @@ html {
   /* flex-wrap: wrap; */
 }
 
+@media (max-width: 1200px) {
+  .panel {
+    flex-wrap: wrap;
+  }
+}
+
 section {
   box-sizing: border-box;
   border: 1px solid yellow;
